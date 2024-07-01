@@ -42,7 +42,6 @@ function ThreeDot({ type, idItem, dataDeal, dataEmp }) {
   };
   const ref = useOutsideClick(() => {
     setOpenOption(false);
-    setCurrentId("");
   });
   return (
     <span ref={ref}>

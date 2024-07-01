@@ -1,9 +1,18 @@
-import { useState } from "react";
-import { useOutsideClick } from "@/context/OutSideClick";
-import { addDoc, collection, doc, updateDoc } from "firebase/firestore";
-import { db } from "@/lib/firebaseConfig";
-import { useRouter } from "next/router";
+// import { useState } from "react";
+// import { useOutsideClick } from "@/context/OutSideClick";
+// import { addDoc, collection, doc, updateDoc } from "firebase/firestore";
+// import { db } from "@/lib/firebaseConfig";
+// import { useRouter } from "next/router";
+// import { useConFast } from "@/context/ContextProject";
+// import Button from "./Button";
+// import ErrorInput from "./ErrorInput";
+
 import { useConFast } from "@/context/ContextProject";
+import { useOutsideClick } from "@/context/OutSideClick";
+import { db } from "@/lib/firebaseConfig";
+import { addDoc, collection, doc, updateDoc } from "firebase/firestore";
+import { useRouter } from "next/router";
+import { useState } from "react";
 import Button from "./Button";
 import ErrorInput from "./ErrorInput";
 
