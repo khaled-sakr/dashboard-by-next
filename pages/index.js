@@ -1,14 +1,14 @@
-import { getStaticProps as getStaticPropsInc } from "./incomes";
-import { getStaticProps as getStaticPropsEmp } from "./employees";
+import { getServerSideProps as getServerSidePropsInc } from "./incomes";
+import { getServerSideProps as getServerSidePropsEmp } from "./employees";
 import StaticIncomes from "@/components/StaticIncomes";
 import StaticEmployees from "@/components/StaticEmployees";
 import CustomedOutInc from "@/components/CustomedOutInc";
 import CustomedOutEmp from "@/components/CustomedOutEmp";
 import Graph from "@/components/Graph";
 
-export async function getStaticProps() {
-  const dataEmp = await getStaticPropsEmp();
-  const dataInc = await getStaticPropsInc();
+export async function getServerSideProps() {
+  const dataEmp = await getServerSidePropsEmp();
+  const dataInc = await getServerSidePropsInc();
   return {
     props: {
       ...dataEmp.props,

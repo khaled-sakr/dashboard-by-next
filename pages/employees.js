@@ -6,7 +6,7 @@ import { useConFast } from "@/context/ContextProject";
 import Modal from "@/components/Modal";
 import TableEmp from "@/components/TableEmp";
 import Button from "@/components/Button";
-export async function getStaticProps() {
+export async function getServerSideProps() {
   const propsDB = !getApps().length
     ? db
     : getFirestore(initializeApp(firebaseConfig));

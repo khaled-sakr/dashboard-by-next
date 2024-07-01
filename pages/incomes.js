@@ -7,7 +7,7 @@ import Modal2 from "@/components/Modal2";
 import TableInc from "@/components/TableInc";
 import Button from "@/components/Button";
 
-async function getStaticProps() {
+async function getServerSideProps() {
   const propsDB = !getApps().length
     ? db
     : getFirestore(initializeApp(firebaseConfig));
@@ -57,4 +57,4 @@ function Incomes({ dataInc }) {
 }
 
 export default Incomes;
-export { getStaticProps };
+export { getServerSideProps };
