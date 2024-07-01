@@ -20,4 +20,6 @@ This project I created it as controll panal to practise next js liberary
 - Styling: Styled with Tailwind CSS for a modern look and feel.
 
 ## Screenshot
-<div><img src=''/><div>
+<div><img src='https://github.com/khaled-sakr/dashboard-by-next/blob/main/public/Annotation%202024-07-01%20210353.png'/><div>
+  <div><img src='https://github.com/khaled-sakr/dashboard-by-next/blob/main/public/Annotation%202024-07-01%20210439.png'/><div>
+  <div><img src='https://github.com/khaled-sakr/dashboard-by-next/blob/main/public/Annotation%202024-07-01%20210502.png'/><div>
