@@ -3,7 +3,7 @@ import TodayDeal from "./TodayDeal";
 
 function CustomedOutInc({ data }) {
   const today = formatDate(new Date());
-  const dataIncFiltered = data.filter((item) => item.date === today);
+  const dataIncFiltered = data?.filter((item) => item?.date === today);
   return (
     <>
       <span className=" shad flex flex-col mr-2  md:mx-auto mx-0  mt-6 text-center w-3/6 md:w-[49%] h-[250px] bg-stone-300  rounded-[40px] p-5 text-2xl mb-2">

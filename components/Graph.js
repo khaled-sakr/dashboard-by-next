@@ -2,14 +2,14 @@
 import AreaChartPlot from "./AreaChartPlot";
 function Graph({ data }) {
   const date = data?.map((item) =>
-    item.date.replace("-", "").replace("-", "").slice(0, 8)
+    item?.date?.replace("-", "")?.replace("-", "")?.slice(0, 8)
   );
   const incomes = data
     ?.map((item) => item.benefit)
-    .sort((a, b) => Number(a) - Number(b));
+    ?.sort((a, b) => Number(a) - Number(b));
 
-  const packages = data.map((item) => item.packages);
-  const dataView = date.map((date, index) => {
+  const packages = data?.map((item) => item.packages);
+  const dataView = date?.map((date, index) => {
     const Samsung = packages;
     return {
       date: date,
