@@ -11,8 +11,8 @@ function CustomedOutInc({ data }) {
           All Deals Today
         </div>
         <div className=" overflow-y-scroll scroll">
-          {dataIncFiltered.map((item) => (
-            <TodayDeal item={item.company} key={item.id} />
+          {dataIncFiltered?.map((item) => (
+            <TodayDeal item={item?.company} key={item?.id} />
           ))}
         </div>
       </span>
