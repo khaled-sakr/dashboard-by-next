@@ -1,4 +1,4 @@
-import ThreeDot from "@/components/ThreeDot";
+import ThreeDot from "./ThreeDot";
 
 function Employee({ employee }) {
   const { job, confirm, name, hour, phone, salary, id } = employee;
