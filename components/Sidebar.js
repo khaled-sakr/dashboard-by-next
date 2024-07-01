@@ -26,7 +26,11 @@ function Sidebar() {
         </li>
         <li>
           <Link href="/incomes">
-            <Button type="normal" select={pathname === "/incomes"}>
+            <Button
+              children="Incomes"
+              type="normal"
+              select={pathname === "/incomes"}
+            >
               <GiMoneyStack />
             </Button>
           </Link>
