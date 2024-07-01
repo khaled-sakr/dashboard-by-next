@@ -4,7 +4,7 @@ This project I created it as controll panal to practise next js liberary
 
 ## Project Documentation
 - [Demo](https://dashboard-cv.netlify.app/): the demo project in netlify 
-- [Github]((https://github.com/khaled-sakr/dashboard-by-next)): lets see the code.
+- [Github](https://github.com/khaled-sakr/dashboard-by-next): lets see the code.
 
 ## Features
 - List the main features of your dashboard application (e.g., employee management, income tracking, etc.).
