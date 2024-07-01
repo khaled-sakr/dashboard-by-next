@@ -30,7 +30,6 @@ function Sidebar() {
         <li>
           <Link href="/incomes">
             <Button
-              children="Incomes"
               type="normal"
               select={pathname === "/incomes"}
             >
