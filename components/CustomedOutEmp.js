@@ -1,4 +1,5 @@
-import UnconfirmEmp from "@/pages/index/UnconfirmEmp";
+import UnconfirmEmp from "./UnconfirmEmp";
+
 function CustomedOutEmp({ data }) {
   const dataEmpUnConf = data.filter((item) => !item.confirm);
   return (

@@ -1,11 +1,11 @@
-import Button from "@/components/Button";
 import Head from "next/head";
-import TableEmp from "./employees/TableEmp";
 import { getApps, initializeApp } from "firebase/app";
 import { db, firebaseConfig } from "@/lib/firebaseConfig";
 import { collection, getDocs, getFirestore, query } from "firebase/firestore";
 import { useConFast } from "@/context/ContextProject";
-import Modal from "@/pages/employees/Modal";
+import Modal from "@/components/Modal";
+import TableEmp from "@/components/TableEmp";
+import Button from "@/components/Button";
 export async function getStaticProps() {
   const propsDB = !getApps().length
     ? db

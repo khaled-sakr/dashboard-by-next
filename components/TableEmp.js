@@ -1,5 +1,5 @@
-import Empty from "@/components/Empty";
 import Employee from "./Employee";
+import Empty from "./Empty";
 
 function TableEmp({ data }) {
   if (data.length === 0) return <Empty item="employees" />;

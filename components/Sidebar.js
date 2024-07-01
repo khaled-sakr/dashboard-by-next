@@ -1,14 +1,11 @@
-import { AiFillHome } from "react-icons/ai";
 import { MdEngineering } from "react-icons/md";
 import { GiMoneyStack } from "react-icons/gi";
-import Link from "next/link";
-import { useRouter } from "next/router";
+import { AiFillHome } from "react-icons/ai";
 import Button from "./Button";
-// import Button from "./Button";
-// import Button from "@/components/Button";
-// import Button from "@/component/Button";
+import { useRouter } from "next/router";
+import Link from "next/link";
+
 function Sidebar() {
-  // const { pathname } = useLocation();
   const { pathname } = useRouter();
   return (
     <div className="md:col-span-2 col-span-3 row-span-1  md:text-xl text-md text-center pt-6 bg-stone-500 md:w-20 sm:w-16 w-14">
@@ -29,11 +26,7 @@ function Sidebar() {
         </li>
         <li>
           <Link href="/incomes">
-            <Button
-              children="Incomes"
-              type="normal"
-              select={pathname === "/incomes"}
-            >
+            <Button type="normal" select={pathname === "/incomes"}>
               <GiMoneyStack />
             </Button>
           </Link>

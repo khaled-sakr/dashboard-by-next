@@ -1,10 +1,10 @@
 import { getStaticProps as getStaticPropsInc } from "./incomes";
 import { getStaticProps as getStaticPropsEmp } from "./employees";
-import CustomedOutEmp from "./index/CustomedOutEmp";
-import CustomedOutInc from "./index/CustomedOutInc";
-import Graph from "./index/Graph";
-import StaticEmployees from "./index/StaticEmployees";
-import StaticIncomes from "./index/StaticIncomes";
+import StaticIncomes from "@/components/StaticIncomes";
+import StaticEmployees from "@/components/StaticEmployees";
+import CustomedOutInc from "@/components/CustomedOutInc";
+import CustomedOutEmp from "@/components/CustomedOutEmp";
+import Graph from "@/components/Graph";
 
 export async function getStaticProps() {
   const dataEmp = await getStaticPropsEmp();

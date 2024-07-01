@@ -1,5 +1,5 @@
-import Deal from "@/pages/incomes/Deal";
-import Empty from "@/components/Empty";
+import Deal from "./Deal";
+import Empty from "./Empty";
 
 function TableInc({ data }) {
   if (data.length === 0) return <Empty item="deals" />;

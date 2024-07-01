@@ -1,11 +1,11 @@
 import { useConFast } from "@/context/ContextProject";
 import { useOutsideClick } from "@/context/OutSideClick";
-import Button from "@/components/Button";
-import ErrorInput from "../../components/ErrorInput";
 import { db } from "@/lib/firebaseConfig";
 import { addDoc, collection, doc, updateDoc } from "firebase/firestore";
 import { useState } from "react";
 import { useRouter } from "next/router";
+import Button from "./Button";
+import ErrorInput from "./ErrorInput";
 
 const styleInput =
   " w-[70%] ml-2 col-span-1 w-full rounded-md sm:px-9 px-2 py-0 xs:py-[2px] outline-none ";
@@ -26,7 +26,6 @@ function Modal2({ setOpenedModal2 }) {
   } = useConFast();
   const add = currentId === "" || dataInc === defaultValuesInc ? "Add" : "Edit";
   const { pathname, query } = router;
-  // const [dataInc, setDataInc] = useState(dataInc);
   const [errors, setErrors] = useState([]);
   const ref = useOutsideClick(() => {
     setOpenedModal2(false);

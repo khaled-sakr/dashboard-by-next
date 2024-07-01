@@ -4,8 +4,8 @@ import { addDoc, collection, doc, updateDoc } from "firebase/firestore";
 import { db } from "@/lib/firebaseConfig";
 import { useRouter } from "next/router";
 import { useConFast } from "@/context/ContextProject";
-import Button from "@/components/Button";
-import ErrorInput from "@/components/ErrorInput";
+import Button from "./Button";
+import ErrorInput from "./ErrorInput";
 
 const styleInput =
   " w-[70%] ml-2 col-span-1 w-full rounded-md sm:px-9 px-2 py-0 xs:py-[2px] outline-none text-stone-600";

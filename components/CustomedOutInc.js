@@ -1,5 +1,5 @@
-import TodayDeal from "@/pages/index/TodayDeal";
 import { formatDate } from "@/context/date";
+import TodayDeal from "./TodayDeal";
 
 function CustomedOutInc({ data }) {
   const today = formatDate(new Date());

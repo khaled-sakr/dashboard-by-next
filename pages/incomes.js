@@ -1,13 +1,11 @@
-import Button from "@/components/Button";
-// import TableDeal from "@/components/TableDeal";
 import { firebaseConfig, db } from "@/lib/firebaseConfig";
 import { getApps, initializeApp } from "firebase/app";
 import { collection, getDocs, getFirestore, query } from "firebase/firestore";
-// import TableDeal from "@/components/TableDeal";
 import Head from "next/head";
-import TableInc from "./incomes/TableInc";
 import { useConFast } from "@/context/ContextProject";
-import Modal2 from "@/pages/incomes/Modal2";
+import Modal2 from "@/components/Modal2";
+import TableInc from "@/components/TableInc";
+import Button from "@/components/Button";
 
 async function getStaticProps() {
   const propsDB = !getApps().length
@@ -41,11 +39,7 @@ function Incomes({ dataInc }) {
         <span className="col-span-2 border-r border-gray-500">benefit</span>
         <span className="col-span-2 ">Phone</span>
       </div>
-      <TableInc
-        data={dataInc}
-        // type="incomes"
-      />
-      {/* <TableDeal data={data} type="incomes" /> */}
+      <TableInc data={dataInc} />
       <div className="mr-6">
         <Button
           onClick={() => {
