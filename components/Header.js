@@ -11,7 +11,7 @@ function Header() {
           href="https://dashboard-cv.netlify.app/"
           className="text-center sm:text-sm text-[8px] sm:rounded-md rounded-sm my-auto font-semibold text-red-100 bg-red-600 p-2 border-red-800"
         >
-          The same project but router app
+          The same project but by react router
         </a>
         <span className="flex gap-3 justify-end">
           <BiSearchAlt2 className="text-stone-700  m-auto sm:text-6xl text-2xl my-auto" />
