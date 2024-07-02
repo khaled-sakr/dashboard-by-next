@@ -11,7 +11,7 @@ export default function App({ Component, pageProps }) {
       <ContextProject>
         <Head>
           <title>Vanilla Co</title>
-          <link rel="icon" href=".\public\images1.png" />
+          <link rel="icon" href=".\images.png" />
         </Head>
         <Header />
         <div
